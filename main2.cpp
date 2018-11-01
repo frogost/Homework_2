@@ -31,11 +31,11 @@ private:
 public:
     void setCord(point a1) {
         r = sqrt(pow(a1.getX(), 2) + pow(a1.getY(), 2));
-        phi = atan(a1.getX()/a1.getY());
+        phi = atan(a1.getX()/a1.getY())* 180.0 / 3.1415;
     }
     void print() {
         std::cout << "Радиус - " << r << '\n';
-        std::cout << "Угол - " << phi << '\n';
+        std::cout << "Угол в градусах - " << int (phi) << '\n';
     }
 };
 
