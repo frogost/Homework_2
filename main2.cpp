@@ -25,8 +25,8 @@ public:
 
 class polar{
 private:
-    double r;
-    double phi;
+    float r;
+    float phi;
 
 public:
     void setCord(point a1) {
